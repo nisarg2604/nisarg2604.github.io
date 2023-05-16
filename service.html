@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .logo {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 26%;
+            border: 3px solid white;
+            border-radius: 50px;
+            margin: 5px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+
+        .navlist {
+            width: 70%;
+            /* background-color: black; */
+            display: flex;
+            align-items: center;
+        }
+
+        .navlist li {
+            list-style: none;
+            padding: 10px 20px;
+            font-size: larger;
+        }
+
+        .navlist li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .navlist li a:hover {
+            color: greenyellow;
+        }
+
+        .rightnav {
+            width: 30%;
+            /* background-color: black; */
+            text-align: right;
+            padding: 10px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 15px;
+            border: 2px solid grey;
+            border-radius: 5px;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.8) url('bg.jpg');
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: rgb(243, 50, 82);
+            /* text-decoration: underline; */
+            margin: 0px 0px;
+            padding: 40px 0px 0px 0px;
+        }
+
+        #op {
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        .box1 {
+            background-color: rgb(239, 243, 245);
+        }
+
+        #services {
+            display: inline-block;
+            width: 350px;
+            height: 334px;
+            margin: 40px;
+            padding: 5px;
+            border: 3px solid rgb(23, 14, 14);
+            background-color: rgb(247, 240, 240);
+            color: black;
+            border-radius: 20px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .burger {
+            display: none;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 15px;
+        }
+
+        .line {
+            width: 33px;
+            background-color: white;
+            height: 4px;
+            margin: 5px 3px;
+        }
+
+        .footer {
+            padding: 10px 0px;
+            text-align: center;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        /* @media only screen and (max-width: 890px){
+            .h2{
+                text-align: center;
+            }
+            #services{
+                text-align: center;
+            }
+            
+        } */
+        @media only screen and (max-width: 1140px) {
+            .navlist {
+                flex-direction: column;
+            }
+
+            .navbar {
+                flex-direction: column;
+                height: 447px;
+                transition: all 0.7s ease-out;
+            }
+
+            .rightnav {
+                text-align: center;
+            }
+
+            .box-main {
+                flex-direction: column-reverse;
+                max-width: 100%;
+            }
+
+            #search {
+                width: 100%;
+            }
+
+            .burger {
+                display: block;
+                margin: 0px 15px;
+            }
+
+            .h-nav-resp {
+                height: 72px;
+            }
+
+            .v-class-resp {
+                opacity: 0;
+            }
+
+            .button {
+                text-align: center;
+            }
+            #services{
+                margin: 25px 52px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="navlist v-class-resp">
+            <div class="logo"><img src="lp.jpg" alt="LOGO"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="service.html">Servies</a></li>
+            <li><a href="contectus.html ">Contect Us</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+        </ul>
+        <div class="rightnav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+
+    <div class="box1">
+
+        <h2>Our Services</h2>
+        <section id="services">
+            <h4 id="op"><b>Content apps</b></h4><br>
+            <img src="content.jpg" alt="Content apps" class="center"><br>
+            <p>With GoodBarber, create apps to deliver any type of content: editorial content, community or loyalty
+                features.
+                Bring your ideas to life with an app exceptionally designed.</p>
+        </section>
+
+        <section id="services">
+            <h4 id="op"><b>Native apps</b></h4><br>
+            <img src="Native App.jpeg" alt="Native apps" class="center"><br>
+            <p>It delivers native apps in Objective-C for iOS and Java for Android,
+                to ensure the best user experience on each platform.</p>
+        </section>
+
+        <section id="services">
+            <h4 id="op"><b>eCommerce apps</b></h4><br>
+            <img src="eCommers.jpeg" alt="eCommers apps" class="center"><br>
+            <p>create your online store and sell your products on every channel (Apple Store, Google Play and Web).
+                Enhance your
+                products with a beautiful app and increase your profits.</p>
+        </section>
+
+        <section id="services">
+            <h4 id="op"><b>Progressive Web App</b></h4><br>
+            <img src="PWA.jpeg" alt="PWA" class="center"><br>
+            <p>It Progressive Web Apps in Angular 8.0. This next generation of web apps allows for a one of a kind
+                reactivity and the most advanced user experience, on mobile and beyond, tablets and desktop alike.</p>
+        </section>
+
+        <section id="services">
+            <h4 id="op"><b>Unique back office</b></h4><br>
+            <img src="UBO.jpeg" alt="UbO" class="center"><br>
+            <p>Take advantage of the most advanced management system on the market.The GoodBarber back office is
+                intuitive and lets you build, without any coding skills, a project equipped there.
+            </p>
+        </section>
+
+
+
+        <section id="services">
+            <h4 id="op"><b>Custom app</b></h4><br>
+            <img src="Custom.jpeg" alt="Content apps" class="center"><br>
+            <p>Stand out from predefined templates.Build a tailor-made app for your business specific needs.Transform
+                your idea into a unique app.This is custom app service of our web site</p>
+        </section>
+    </div>
+
+    <footer class="background">
+        <div class="footer">
+            Copyright &copy; 2030 www.Educate.com - All rights reserved.
+        </div>
+    </footer>
+    <script src="JS/resp.js"></script>
+</body>
+
+</html>

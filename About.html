@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="lp.jpg" type="image/icon type">
+    <title>About education</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .logo {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 26%;
+            border: 3px solid white;
+            border-radius: 50px;
+            margin: 5px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+
+        .navlist {
+            width: 70%;
+            /* background-color: black; */
+            display: flex;
+            align-items: center;
+        }
+
+        .navlist li {
+            list-style: none;
+            padding: 10px 20px;
+            font-size: larger;
+        }
+
+        .navlist li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .navlist li a:hover {
+            color: greenyellow;
+        }
+
+        .rightnav {
+            width: 30%;
+            /* background-color: black; */
+            text-align: right;
+            padding: 10px;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 15px;
+            border: 2px solid grey;
+            border-radius: 5px;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.8) url('bg.jpg');
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .burger {
+            display: none;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 15px;
+        }
+
+        .line {
+            width: 33px;
+            background-color: white;
+            height: 4px;
+            margin: 5px 3px;
+        }
+
+
+        body {
+            background-color: rgb(199, 199, 180);
+        }
+
+        h1{
+            font-size: 40px;
+            /* background-color: #a3a3cf; */
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+            margin-bottom: 10px;
+            padding: 25px 10px;
+        }
+
+        .goals {
+            background-color: blanchedalmond;
+            width: 80%;
+            /* height: 130px; */
+            padding: 5px;
+            border: 2px solid black;
+            margin: 40px auto;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 25px;
+            margin: 10px 0px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        @media only screen and (max-width: 1140px) {
+            .navlist {
+                flex-direction: column;
+            }
+
+            .navbar {
+                flex-direction: column;
+                height: 447px;
+                transition: all 0.7s ease-out;
+            }
+
+            .rightnav {
+                text-align: center;
+            }
+
+            .box-main {
+                flex-direction: column-reverse;
+                max-width: 100%;
+            }
+
+            #search {
+                width: 100%;
+            }
+
+            .burger {
+                display: block;
+                margin: 0px 15px;
+            }
+
+            .h-nav-resp {
+                height: 72px;
+            }
+
+            .v-class-resp {
+                opacity: 0;
+            }
+
+            .button {
+                text-align: center;
+            }
+        }
+
+        .footer {
+            padding: 10px 0px;
+            text-align: center;
+            color: white;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="navlist v-class-resp">
+            <div class="logo"><img src="lp.jpg" alt="LOGO"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="service.html">Servies</a></li>
+            <li><a href="contectus.html ">Contect Us</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+        </ul>
+        <div class="rightnav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <h1> Goals Of Education.</h1>
+
+    <section class="goals">
+        <h3 class="heading">Think positive to stay focused </h3>
+        <p>Positive thinking can make it easier for you to focus on tasks that need to be done and learn new
+            information.For instance, if you approach learning better writing skills with a positive mindset, you may be
+            more likely tostay focused since you're open to the experience.</p>
+    </section>
+
+
+    <section class="goals">
+        <h3 class="heading"> Stay resilient</h3>
+        <p>Resiliency refers to the ability to adapt after encountering a challenge. It's important to acknowledge the
+            challenge or difficulty in order to find a way to overcome it. Resiliency helps you accept the issue and
+            find steps to move past it while staying positive.</p>
+    </section>
+
+
+    <section class="goals">
+        <h3 class="heading">Make time to read</h3>
+        <p>Reading can help you to develop critical thinking skills, which are important to make well-reasoned
+            decisions. Reading requires you to think and process information in ways you may not experience in other
+            forms of entertainment. You can read fiction, autobiographies or journals on any topic that interests you.
+            While you read, take notes to keep your mind focused on the text.</p>
+    </section>
+
+
+    <section class="goals">
+        <h3 class="heading"> Manage your time</h3>
+        <p>Good time-management skills help you to prioritize tasks so you’re able to complete work and assignments on
+            time. You should also plan ahead, set aside the time you need for assignments and projects and stay focused
+            to better use that time.</p>
+    </section>
+
+    <section class="goals">
+        <h3 class="heading">Find time to relax</h3>
+        <p>Finding time to relax can help you to stay focused and motivated. Giving yourself time to do something you
+            enjoy or practice self-care can help instill balance in your life. When you take a break, you can usually
+            return to your task with a renewed focus and a fresh perspective.</p>
+    </section>
+
+    <section class="goals">
+        <h3 class="heading">Strive for excellence</h3>
+        <p>You should strive for excellence in your work by setting and then exceeding goals. Excellence is about
+            striving to be better, with the end goal of providing consistent quality work. To achieve excellence in your
+            day to day, you need to spend time practicing and developing new skills.</p>
+    </section>
+
+
+    <section class="goals">
+        <h3 class="heading">Build a strong network</h3>
+        <p>Networking is about building and nurturing long-term relationships with the people you meet. When you invest
+            time in building meaningful relationships (personal and professional) you create a network of people you can
+            rely on throughout your career.</p>
+    </section>
+
+    <section class="goals">
+        <h3 class="heading">Build good study habits</h3>
+        <p>One of the most important parts of academic success is practicing good study habits. Developing and
+            maintaining good study habits can help you to increase your competence, confidence and self-esteem.</p>
+    </section>
+
+    <section class="goals">
+        <h3 class="heading">Attend seminars or training</h3>
+        <p>A seminar is an expert-led educational meeting that focuses on a specific topic or discipline. Seminars are
+            an ideal opportunity for you to study a topic in-depth. By asking questions, paying attention to the speaker
+            and writing notes, you can leave a seminar with a wide range of knowledge in a specific field.</p>
+    </section>
+
+    <section class="goals">
+        <h3 class="heading">Develop patience to achieve your goals</h3>
+        <p>Being patient can help you realize that consistent reflection and hard work can produce successful outcomes.
+            Many goals you need to reach often take time and patience can help you continually produce excellent work.
+        </p>
+    </section>
+
+    <footer class="background">
+        <div class="footer">
+            Copyright &copy; 2030 www.Educate.com - All rights reserved.
+        </div>
+    </footer>
+
+    <script src="JS/resp.js"></script>
+</body>
+
+</html>
